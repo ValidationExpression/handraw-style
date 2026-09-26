@@ -515,7 +515,7 @@
 | 257 · midlibrary | Romantic Pink Watercolor Sumi-e Wash | 浪漫粉调新东风水墨晕染风、柔和半透明水粉水彩层次、写意书法墨色点缀、轻盈梦幻的落樱花瓣与东方抒情写意。 |
 | 258 · yang02010 | Minimalist Atmospheric Storybook & Vast Scale Contrast | 现代极简绘本插画风、大面积同色系连续环境主导画面、背景极度简化并仅保留少量必要景物、人物微缩与宏大环境强烈尺度反差、安静松弛与诗意孤独氛围、非对称大面积负空间留白、主体轮廓简练概括、手绘笔触与纸张颗粒/蜡笔丙烯干刷纹理。 |
 | 259 · 梵高 | Van Gogh Expressive Impasto Oil Painting | 后印象派厚涂油画质感、短促而强烈的雕塑感厚堆笔触、充满律动感与生命力的线条走势、纯正浓郁的色彩并置与情感张力；只采用梵高标志性的油画画风与笔触肌理，画面元素的选择必须完全切合指定主题，除非用户明确指定，杜绝默认套用星空漩涡、柏树、向日葵、麦田等梵高惯用符号。 |
-| 260 · 牙仔⇌ | Chic Stylized Anime Comic Art | 潮流风格化日系动漫插画风、利落流畅的手绘线稿、鲜明平涂色块与网点纸微纹理、极具辨识度的时尚青年角色设计。 |
+| 260 · 日系超萌1.5头身Q版 | Japanese Kawaii Mini Chibi 2D Illustration | Japanese Mini Chibi /Kawaii Chibi, 2d, 1.5 头身。 |
 | 261 · OscarAI | Charming 2D Animation Feature Character Visdev | 温润细腻的2D动画长片角色概念设计风、大眼与黑框眼镜的生动表情、利落剪影造型与微质感笔触边缘、纯白留白背景、质朴温和的大地与森林色系、极具亲和力与故事感的动画视觉开发(visdev)艺术。 |
 
 | 262 · South Park | South Park Animation Style | 扁平几何色块、粗黑轮廓线、简化圆润人物形体、夸张圆眼与极简五官、鲜明高饱和蓝色与海洋色调、电视动画式平涂质感。 |
