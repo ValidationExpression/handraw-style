@@ -182,17 +182,7 @@ if (langBtn) {{
   }});
 }}
 applyLang(currentLang);
-function setSize(size){{
-  const targetSize=['1x','2x'].includes(size)?size:'2x';
-  document.body.dataset.size=targetSize;
-  localStorage.setItem('handdraw_layout_size',targetSize);
-  sizeBtns.forEach(btn=>btn.classList.toggle('is-active',btn.dataset.size===targetSize));
-  scheduleLayout();
-}}
-sizeBtns.forEach(btn=>btn.addEventListener('click',()=>setSize(btn.dataset.size)));
-const savedSize=localStorage.getItem('handdraw_layout_size');
-if(savedSize)setSize(savedSize);else setSize('2x');
-if(wechatBtn&&wechatModal){{wechatBtn.addEventListener('click',()=>wechatModal.showModal());wechatModal.querySelector('.close').addEventListener('click',()=>wechatModal.close());wechatModal.addEventListener('click',event=>{{if(event.target===wechatModal)wechatModal.close()}});}}
+
 const gallery=document.querySelector('#gallery');let layoutFrame=0;
 function scheduleLayout(){{if(!layoutFrame)layoutFrame=requestAnimationFrame(arrangeCards);}}
 function arrangeCards(){{
@@ -216,6 +206,19 @@ let lastWidth=-1;
 new ResizeObserver(entries=>{{const width=entries[0].contentRect.width;if(width!==lastWidth){{lastWidth=width;scheduleLayout();}}}}).observe(gallery);
 window.addEventListener('resize',scheduleLayout);
 if(document.fonts)document.fonts.ready.then(scheduleLayout);
+
+function setSize(size){{
+  const targetSize=['1x','2x'].includes(size)?size:'2x';
+  document.body.dataset.size=targetSize;
+  localStorage.setItem('handdraw_layout_size',targetSize);
+  sizeBtns.forEach(btn=>btn.classList.toggle('is-active',btn.dataset.size===targetSize));
+  scheduleLayout();
+}}
+sizeBtns.forEach(btn=>btn.addEventListener('click',()=>setSize(btn.dataset.size)));
+const savedSize=localStorage.getItem('handdraw_layout_size');
+if(savedSize)setSize(savedSize);else setSize('2x');
+if(wechatBtn&&wechatModal){{wechatBtn.addEventListener('click',()=>wechatModal.showModal());wechatModal.querySelector('.close').addEventListener('click',()=>wechatModal.close());wechatModal.addEventListener('click',event=>{{if(event.target===wechatModal)wechatModal.close()}});}}
+
 function updateActivePrompt(){{
     if(!activeCard) return;
     activePrompt=(currentLang==='en'?activeCard.dataset.promptEn:activeCard.dataset.promptZh)||activeCard.dataset.prompt||'';
